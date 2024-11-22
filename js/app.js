@@ -8,7 +8,7 @@ let result
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener("click", (e) => {
     userChoice = e.target.id
-    userChoiceDisplay.innerHTML = userChoice
+    userChoiceDisplay.innerHTML = `: ${userChoice}`
     generateComputerChoice()
     getResult()
 }))
@@ -23,12 +23,12 @@ function generateComputerChoice() {
     } else if (randomNumber === 2) {
         computerChoice = "scissors"
     }
-    computerChoiceDisplay.innerHTML = computerChoice
+    computerChoiceDisplay.innerHTML = `: ${computerChoice}`
 }
 
 function getResult() {
     if (userChoice === computerChoice) {
-        result = "It'a a draw"
+        result = "It's a draw"
     } else if (userChoice === "rock" && computerChoice === "paper") {
         result = "You lose!"
     } else if (userChoice === "rock" && computerChoice === "scissors") {
