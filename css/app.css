@@ -7,7 +7,8 @@
 }
 
 body {
-    padding: 10% 32%;
+    margin: 10% auto;
+    width: 35%;
     font-family: "Parkinsans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -20,6 +21,7 @@ body {
 .display-area {
     line-height: 1.5;
     margin-bottom: 5%;
+    padding-left: 13%;
 }
 
 .computer-choice-display-area h2,
